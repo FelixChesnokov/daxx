@@ -1,0 +1,20 @@
+What is your favorite git branching strategy? And why?
+
+In my practice I use feature-branch workflow and GitFlow strategies. I think GitFlow strategy more convenient for the
+most part of projects because:
+1) 1 task – 1 branch. Every feature or fixing has own branch. Developer or QA engineer can test this primarily in
+“feature branch” after that in “develop” branch and in the end in master branch on production. So we have 3 testing steps.
+
+2) We have 3 steps of code review:
+	1 – developer before creating merge request to develop;
+	2 – develop branch keeper;
+	3 – master branch keeper. (good if develop and master branch keepers are different developers)
+In a small team I think good practice  is if one developer makes code review to other developers because they will
+have a new experience and make code better.
+
+3) Testing in develop branch is very important because all new features and bug fixing can influence to each other. S
+o we can check it.
+
+Problems:
+1) I think this strategy good in small teams. If you have a lot of developers in your team better to use something like
+Dictator and lieutenants workflow.
